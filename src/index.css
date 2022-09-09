@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -18,12 +18,72 @@ code {
     monospace;
 }
 
+@supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
+  
+  .parallax{
+    perspective: 100px;
+    perspective-origin: bottom left;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .parallax-layer{
+    position: absolute;
+    transform-origin: bottom left;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .parallax-group{
+    position: relative;
+    height: 100vh;
+    transform-style: preserve-3d;
+  }
+
+  @media screen and (min-width: 40em) {
+    .parallax-layer-base{
+      transform: translateZ(0);
+    }
+    
+    .parallax-layer-fore{
+      transform: translateZ(100px) scale(2);
+    }
+
+    .parallax-layer-less{
+      transform: translateZ(-50px) scale(1.5); 
+    }
+    
+    .parallax-layer-back{
+      transform: translateZ(-100px) scale(2);
+    }   
+
+    .parallax-layer-far{
+      transform: translateZ(-200px) scale(3);
+    }
+  }
+}
+
 @layer utilities {
   .sub-button{
-    @apply hover:text-gray-400 md:mr-6 duration-300
+    @apply hover:text-gray-400 md:mr-6 duration-300 text-white
   }
   
   .signup-button{
-    @apply px-6 py-2 bg-white hover:bg-yellow-200 border-2 border-yellow-300 rounded-full duration-200 mr-0 hover:text-black
+    @apply px-6 py-2 bg-white hover:bg-yellow-200 border-2 border-yellow-300 rounded-full duration-200 mr-0 text-black hover:text-black
+  }
+
+  .works-picture{
+    @apply rounded-full overflow-hidden
+  }
+
+  .works-label{
+    @apply text-white text-xl mt-8
+  }
+
+  .dot{
+    @apply w-1 h-1 bg-slate-400 rounded-full
   }
 }

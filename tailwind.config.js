@@ -7,11 +7,11 @@ module.exports = {
     extend: {
 
       fontFamily: {
-        font_main: ['Amatic SC']
+        font_main: ['Quicksand']
       },
 
       backgroundImage: {
-        'stock-background': "url('./res/placeholder.jpg')"
+        'temp-image': "url('/src/res/temp.jpg')"
       },
 
     },
