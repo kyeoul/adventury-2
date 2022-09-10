@@ -9,7 +9,7 @@ import Footer from '../Components/Footer';
 
 function Home() {
   return (
-    <div className="App font-font_main parallax">
+    <div className="parallax">
 
       <section className="parallax-group -z-10">
         <div className="parallax-layer parallax-layer-less -z-10 bg-black">
