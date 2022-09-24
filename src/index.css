@@ -86,4 +86,8 @@ code {
   .dot{
     @apply w-1 h-1 bg-slate-400 rounded-full
   }
+
+  .login-textbox{
+    @apply h-12 w-full p-2 border-b-2 focus:border-yellow-300 focus:outline-none
+  }
 }
