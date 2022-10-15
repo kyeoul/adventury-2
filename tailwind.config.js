@@ -11,7 +11,8 @@ module.exports = {
       },
 
       backgroundImage: {
-        'temp-image': "url('/src/res/temp.jpg')"
+        'temp-image': "url('/src/res/temp.jpg')",
+        'map-image': "url('/src/res/map.jpeg')"
       },
 
     },
