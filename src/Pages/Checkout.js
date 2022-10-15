@@ -1,12 +1,9 @@
 import React from 'react'
 import { useNavigate, useLocation } from 'react-router-dom';
 import OrderSummary from '../Components/OrderSummary';
-import CheckoutInfo from '../Components/CheckoutInfo';
-import { useState } from 'react';
 
 function Checkout() {
 
-    const [isSummary, setIsSummary] = useState(true);
     let navigate = useNavigate();
     let location = useLocation();
 
@@ -14,14 +11,28 @@ function Checkout() {
 
     function placeOrder(){
         console.log("sup vishal youre looking spicy rn")
+        switch(state){
+            case "One Time Payment":
+                console.log("nice");
+                window.location.href = "https://square.link/u/ZM1jSViS";
+                break;
+            case "Monthly Sub":
+                console.log("Nicer");
+                window.location.href = "https://square.link/u/HKRCC1S6";
+                break;
+            case "Yearly Sub":
+                console.log("Nicest");
+                window.location.href = "https://square.link/u/Mx7n32vT";
+                break;
+        }
     }
 
   return (
     <div className="w-screen h-screen flex flex-col justify-center items-center">
-        {isSummary ? <OrderSummary product={state}/> : <CheckoutInfo />}
+        <OrderSummary product={state}/>
         <div className="mt-6">
-            <button className="" onClick={isSummary ? () => {navigate("/trips")} : () => {setIsSummary(true)}}>Back</button>
-            <button className="signup-button ml-6" onClick={isSummary ? () => {setIsSummary(false)} : placeOrder}>{isSummary ? "Checkout" : "Confirm"}</button>
+            <button className="" onClick={() => {navigate("/trips")}}>Back</button>
+            <button className="signup-button ml-6" onClick={placeOrder}>Checkout</button>
         </div>
     </div>
   )

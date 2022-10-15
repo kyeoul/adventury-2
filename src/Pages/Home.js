@@ -6,8 +6,12 @@ import tempImage from '../res/temp.jpg'
 import tempImage2 from '../res/temp2.png'
 import HowItWorks from '../Components/HowItWorks';
 import Footer from '../Components/Footer';
+import { useState } from 'react';
 
 function Home() {
+
+  const [account, setAccount] = useState("");
+
   return (
     <div className="parallax">
 
@@ -17,7 +21,7 @@ function Home() {
         </div>
         
         <div className="parallax-layer parallax-layer-base -z-10">
-          <Navbar />
+          <Navbar account/>
           <Landing />
           
         </div>
