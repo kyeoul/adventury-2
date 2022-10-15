@@ -7,7 +7,7 @@ function Landing() {
         Lorem Ipsum?
       </div>
 
-      <div className="xl:w-5/12 mt-10 text-xl">
+      <div className="2xl:w-5/12 mt-10 text-xl">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse facilisis tempus facilisis. Nullam luctus condimentum risus in dignissim. Maecenas arcu velit, faucibus efficitur luctus id, tempus non enim. Fusce laoreet et nisl mattis finibus. In ullamcorper diam vel elit egestas tempor. Pellentesque rutrum enim mollis, interdum orci eget, laoreet nibh. Phasellus vulputate sollicitudin sapien, in iaculis nisl.
 
         Vivamus accumsan facilisis mauris non blandit. Aenean aliquet accumsan ligula, eget dignissim erat placerat id. Nulla tincidunt purus at lobortis placerat. Vivamus ut orci tempus, consequat lacus vitae, fringilla diam. Vestibulum at leo quis massa malesuada convallis eu a turpis. Curabitur pharetra ornare metus. Vivamus imperdiet pretium elit a ornare. Aliquam erat volutpat. Pellentesque diam lectus, aliquam eu maximus in, auctor a dolor. Nam a ornare mauris.

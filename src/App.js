@@ -9,6 +9,7 @@ import {
 import Home from './Pages/Home';
 import Login from './Pages/Login';
 import Trips from './Pages/Trips';
+import Checkout from './Pages/Checkout';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Home />}/>
         <Route path="/login" element={<Login />} />
         <Route path="/trips" element={<Trips />} />
+        <Route path="/checkout" element={<Checkout />} />
       </Routes>
     </div>
     

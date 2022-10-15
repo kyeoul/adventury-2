@@ -9,7 +9,7 @@ function Footer() {
     }
 
     return (
-        <div className="bg-gray-700 mt-24 p-8 w-full flex flex-col justify-center items-center text-white">
+        <div className="bg-gray-700 mt-16 p-8 w-full flex flex-col justify-center items-center text-white">
 
             <div className="flex flex-row justify-around items-center w-2/6">
                 Privacy Policy

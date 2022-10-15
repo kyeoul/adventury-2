@@ -1,10 +1,9 @@
 import React from 'react'
+import {
+    Link
+} from "react-router-dom";
 
 function SubCard(props) {
-
-    function addToCart() {
-        // Functionality to add cartItem to cart
-    }
 
   return (
     <div className="bg-white p-6 shadow-md w-1/4 box-border rounded-md">
@@ -16,7 +15,7 @@ function SubCard(props) {
         </div>
 
         <div className="flex flex-row justify-end mt-3">
-            <button class="bg-green-700 text-white shadow-md py-3 px-6 rounded-md" onClick={addToCart}>Buy Now</button>
+            <Link to="/checkout" state={props.cartItem}><button class="bg-green-700 text-white shadow-md py-3 px-6 rounded-md">Buy Now</button></Link>
         </div>
     </div>
   )

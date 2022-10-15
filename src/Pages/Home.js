@@ -30,7 +30,7 @@ function Home() {
 
       <section className="parallax-group -z-20">
         <div className="parallax-layer parallax-layer-far -z-10">
-          <img src={tempImage2} className="h-full w-full object-cover"></img>
+          <img src={tempImage2} className="h-[105%] w-[105%] object-cover"></img>
         </div>
 
         <div className="parallax-layer parallax-layer-base -z-10">
