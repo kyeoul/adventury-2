@@ -356,7 +356,7 @@ function Footer() {
             </div>
 
             <div className="mt-8 text-xl">
-                Contact Us:
+                Talk to our bot:
             </div>
 
             {/* <div className=''>
