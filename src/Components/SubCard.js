@@ -12,6 +12,19 @@ function SubCard(props) {
 
         <div className="mt-3 text-gray-700 h-80 text-ellipsis">
             {props.desc}
+
+            <div className="mt-3 flex flex-col items-center">
+              List of possible activities include:
+              <ul className="list-disc w-fit mt-2 text-start">
+                <li>Murder Mystery Night</li>
+                <li>Sledding</li>
+                <li>Volunteer Activities</li>
+                <li>Basketball</li>
+                <li>Watching Movies</li>
+                <li>Attending a Yoga class</li>
+                <li>Apple Picking</li>
+              </ul>
+            </div>
         </div>
 
         <div className="flex flex-row justify-end mt-3">

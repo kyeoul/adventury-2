@@ -24,7 +24,7 @@ function HowItWorks() {
                                 </div>
 
                                 <div className="works-label">
-                                    Culpa ut Lorem esse do aute magna nisi. Incididunt mollit cillum incididunt deserunt. Sit deserunt enim ipsum cupidatat esse anim fugiat quis dolore ut qui.
+                                    Simply provide us with your preferences, such as your favorite types of activities, budget, distance, and availabilty!
                                 </div>
                             </div>
 
@@ -39,7 +39,7 @@ function HowItWorks() {
 
 
                                 <div className="works-label">
-                                    Culpa ut Lorem esse do aute magna nisi. Incididunt mollit cillum incididunt deserunt. Sit deserunt enim ipsum cupidatat esse anim fugiat quis dolore ut qui.
+                                    We curate a list of activities for a perfect adventure, suited to your needs!
                                 </div>
                             </div>
                         </div>
