@@ -15,8 +15,8 @@ function Navbar() {
           (account) => {
             return (
 
-              <div className="w-full h-24 px-6 flex flex-col md:flex-row md:justify-between items-center text-xl bg-transparent">
-                {!account ? "navbar" : account}
+              <div className="w-full h-24 px-6 flex flex-col md:flex-row md:justify-between items-center text-xl bg-transparent text-white">
+                Adventury
 
                 <div className="w-full md:w-auto flex flex-row mt-2 md:mt-0 justify-evenly md:justify-start items-center">
                       {

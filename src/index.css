@@ -92,6 +92,6 @@ code {
   }
 
   .fee-label{
-    @apply w-full flex flex-row justify-between
+    @apply w-full flex flex-row
   }
 }
