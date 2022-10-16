@@ -390,7 +390,7 @@ function Footer() {
             )}
           </div>
 
-          <p>Local Video</p>
+          {/* <p>Local Video</p>
               <video
                 ref={localStreamRef}
                 id="localStream"
@@ -399,7 +399,7 @@ function Footer() {
                 loop
                 muted
                 playsInline
-              ></video>
+              ></video> */}
 
 <p>Remote Video</p>
               <video
