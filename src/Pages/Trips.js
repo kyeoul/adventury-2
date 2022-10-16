@@ -5,9 +5,9 @@ import SubCard from '../Components/SubCard'
 function Trips() {
 
   let list_services = [
-    {id: 1, title: "One Time", desc: "Description", cartItem: "One Time Payment"},
-    {id: 2, title: "Monthly", desc: "Description 2", cartItem: "Monthly Sub"},
-    {id: 3, title: "Yearly", desc: "Description 3", cartItem: "Yearly Sub"}
+    {id: 1, title: "One Time", desc: "A payment plan that you pay once for a single trip planned out by us. It will cost $75 per person.", cartItem: "One Time Payment"},
+    {id: 2, title: "Monthly", desc: "A subscription plan that you pay once a month for a trip every month. It will cost $55 per person.", cartItem: "Monthly Sub"},
+    {id: 3, title: "Yearly", desc: "A subscription plan that you pay once a year for a trip every year. It will cost $45 per person.", cartItem: "Yearly Sub"}
   ]
 
   return (

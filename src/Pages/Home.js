@@ -12,7 +12,7 @@ export const UserContext = React.createContext();
 
 function Home() {
 
-  const [account, setAccount] = useState("");
+  const [account, setAccount] = useState("h");
 
   return (
     <UserContext.Provider value={account}>
