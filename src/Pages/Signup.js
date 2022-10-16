@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from "react-router-dom"
 import SignupForm from '../Components/SignupForm'
 
-function Signup() {
+function Signup(props) {
     return (
         <div className="h-screen w-full bg-gradient-to-br from-yellow-100 to-cyan-200 flex flex-col justify-center items-center">
             
@@ -16,7 +16,7 @@ function Signup() {
             </div>
     
             <div className="mt-4">
-              <SignupForm />
+              <SignupForm app={props.app}/>
             </div>
     
           </div>

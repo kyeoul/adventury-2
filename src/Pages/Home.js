@@ -7,12 +7,27 @@ import tempImage2 from '../res/temp2.png'
 import HowItWorks from '../Components/HowItWorks';
 import Footer from '../Components/Footer';
 import { useState } from 'react';
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { auth } from '../App';
 
 export const UserContext = React.createContext();
 
 function Home() {
 
-  const [account, setAccount] = useState("h");
+  const [account, setAccount] = useState("");
+
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+      // User is signed in, see docs for a list of available properties
+      // https://firebase.google.com/docs/reference/js/firebase.User
+      setAccount(user.uid);
+      // ...
+    } else {
+      // User is signed out
+      // ...
+      setAccount("");
+    }
+  });
 
   return (
     <UserContext.Provider value={account}>
