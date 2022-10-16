@@ -348,7 +348,7 @@ function Footer() {
             <div className="flex flex-row justify-around items-center w-2/6">
                 Privacy Policy
                 <div className="dot"/>
-                FAQ
+                <button><a href="tel:7179877047">Call Us</a></button>
                 <div className="dot"/>
                 Help
                 <div className="dot"/>
