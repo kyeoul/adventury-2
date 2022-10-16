@@ -12,7 +12,8 @@ module.exports = {
 
       backgroundImage: {
         'temp-image': "url('/src/res/temp.jpg')",
-        'map-image': "url('/src/res/map.jpeg')"
+        'map-image': "url('/src/res/map.jpeg')",
+        'account-image': "url('res/gears-featured.webp')"
       },
 
     },

@@ -14,8 +14,6 @@ function Home() {
 
   const [account, setAccount] = useState("");
 
-
-
   return (
     <UserContext.Provider value={account}>
       <div className="parallax">
