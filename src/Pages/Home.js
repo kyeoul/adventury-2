@@ -8,42 +8,48 @@ import HowItWorks from '../Components/HowItWorks';
 import Footer from '../Components/Footer';
 import { useState } from 'react';
 
+export const UserContext = React.createContext();
+
 function Home() {
 
   const [account, setAccount] = useState("");
 
+
+
   return (
-    <div className="parallax">
+    <UserContext.Provider value={account}>
+      <div className="parallax">
 
-      <section className="parallax-group -z-10">
-        <div className="parallax-layer parallax-layer-less -z-10 bg-black">
-          <img src={tempImage} className="h-full w-full object-cover opacity-40"></img>
-        </div>
-        
-        <div className="parallax-layer parallax-layer-base -z-10">
-          <Navbar account/>
-          <Landing />
+        <section className="parallax-group -z-10">
+          <div className="parallax-layer parallax-layer-less -z-10 bg-black">
+            <img src={tempImage} className="h-full w-full object-cover opacity-40"></img>
+          </div>
           
-        </div>
-        
-      </section>
+          <div className="parallax-layer parallax-layer-base -z-10">
+            <Navbar/>
+            <Landing />
+            
+          </div>
+          
+        </section>
 
-      <div className="z-20">
-        <Slides />
+        <div className="z-20">
+          <Slides />
+        </div>
+
+        <section className="parallax-group -z-20">
+          <div className="parallax-layer parallax-layer-far -z-10">
+            <img src={tempImage2} className="h-[105%] w-[105%] object-cover"></img>
+          </div>
+
+          <div className="parallax-layer parallax-layer-base -z-10">
+            <HowItWorks />
+            <Footer />
+          </div>
+        </section>
+
       </div>
-
-      <section className="parallax-group -z-20">
-        <div className="parallax-layer parallax-layer-far -z-10">
-          <img src={tempImage2} className="h-[105%] w-[105%] object-cover"></img>
-        </div>
-
-        <div className="parallax-layer parallax-layer-base -z-10">
-          <HowItWorks />
-          <Footer />
-        </div>
-      </section>
-
-    </div>
+    </UserContext.Provider>
   )
 }
 
