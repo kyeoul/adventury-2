@@ -5,7 +5,7 @@ import {
 import {UserContext} from "../Pages/Home"
 
 
-function Navbar(props) {
+function Navbar() {
 
   return (
     <UserContext.Consumer>
@@ -26,8 +26,9 @@ function Navbar(props) {
                       <Link to={!account ? "/login" : "trips"} className="h-fit"><button className="sub-button">Trips</button></Link>
                       {
                         !account
-                        ? <a href="https://apr5tqlaaiq.typeform.com/to/Gc2p3HLG"><button className="sub-button md:signup-button">Sign Up</button></a>
-                        : <Link to="/faq" clasName="h-fit"><button className="sub-button">FAQ</button></Link>
+                        // ? <a href="https://apr5tqlaaiq.typeform.com/to/Gc2p3HLG"><button className="sub-button md:signup-button">Sign Up</button></a>
+                        ? <Link to="/signup"><button className="sub-button md:signup-button">Sign Up</button></Link>
+                        : <Link to="/faq" className="h-fit"><button className="sub-button">FAQ</button></Link>
                       }
                 </div>
               </div>
